@@ -1,0 +1,25 @@
+areasq=lambda side:side*side
+arearect=lambda length,width:length*width
+areatri=lambda base,height:0.5*base*height
+while True:
+        print("\n choose a shape to calculate area:")
+        print("1.square")
+        print("2.rectangle")
+        print("3.triangle")
+        print("4.exit")
+        choice=int(input("enter choice:"))
+        if choice==1:
+                side=float(input("enter the side length of square:"))
+                print(f"area of square={areasq(side)}")
+        elif choice==2:
+                length=float(input("enter the length:"))
+                width=float(input("enter the width:"))
+                print(f"area of rectangle={arearect(length,width)}")
+        elif choice==3:
+                base=float(input("enter base:"))
+                height=float(input("enter height:"))
+                print(f"area of triangle={areatri(base,height)}")
+        elif choice==4:
+                break
+        else:
+                print("invalid chopice!!")
