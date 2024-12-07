@@ -1,0 +1,4 @@
+def add_numbers(*args):
+        """this function accepts avariable number of imnteger arguments and return their sum"""
+        return sum(args)
+print("sum of 1,2,3:",add_numbers(1,2,3))
