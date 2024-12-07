@@ -1,0 +1,19 @@
+def factorial(num):
+        if num==0 or num==1:
+                return 1
+        else:
+                result=1
+                for i in range(2,num+1):
+                        result*=i
+                return result
+def permutation(n,r):
+        return factorial(n)//factorial(n-r)
+def combination(n,r):
+        return factorial(n)//(factorial(r)*factorial(n-r))
+n=int(input("enter value of n:"))
+r=int(input("enter value of r:"))
+if r>n:
+        print("invalid input:r should be less than or equal to n")
+else:
+        print(f"the number of permutation(p({n},{r})):{permutation(n,r)}")
+        print(f"number of combination(c({n},{r})):{combination(n,r)}")
