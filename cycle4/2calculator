@@ -1,0 +1,33 @@
+def add(x,y):
+        return x+y
+def substract(x,y):
+        return x-y
+def multiply(x,y):
+        return x*y
+def divide(x,y):
+        if y==0:
+                print("error division by zero")
+        return x/y
+while True:
+        print("\nselect operation\n")
+        print("1.addition")
+        print("2.substrction")
+        print("3.multiplication")
+        print("4.division")
+        print("5.exit")
+        choice=int(input("enter a choice:"))
+        if choice==5:
+                  break
+
+        a=int(input("enter 1st number:"))
+        b=int(input("enter 2nd number:"))
+        if choice==1:
+                print("addition=",add(a,b))
+        elif choice==2:
+                print("substraction=",substract(a,b))
+        elif choice==3:
+                print("multiplication=",multiply(a,b))
+        elif choice==4:
+                print("division=",divide(a,b))
+        else:
+                print("invalid choice!!")
