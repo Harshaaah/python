@@ -1,0 +1,15 @@
+from palindrome import is_palindrome
+def find_longest_palindrome(s):
+        n=len(s)
+        longest=""
+        for i in range(n):
+                for j in range(i,n):
+                        substring=s[i:j]
+                        if is_palindrome(substring) and len(substring)>len(longest):
+                                longest=substring
+        return longest
+
+text=input("enter a string:")
+result=find_longest_palindrome(text)
+print("longest palindromic substring:",result)
+
