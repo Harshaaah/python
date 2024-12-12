@@ -1,0 +1,3 @@
+names=input("Enter first names seperated by commas:")
+counta=names.lower().count('a')
+print(f"the letter 'a' appears {counta} times in the list of names")
