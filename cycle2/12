@@ -1,0 +1,23 @@
+n=int(input("enter number of integers to input:"))
+list1=[]
+for i in range(n):
+        num=int(input("enter integer:"))
+        list1.append(num)
+n=int(input("enter number of integers to inputin 2nd list:"))
+list2=[]
+for i in range(n):
+        num=int(input("enter integer:"))
+        list2.append(num)
+if len(list1)==len(list2):
+        print("the list are of same length")
+else:
+        print("the list are different length")
+if sum(list1)==sum(list2):
+        print("the list's sum are same")
+else:
+        print("the list sum are different")
+common=set(list1).intersection(list2)
+if common:
+        print(f"common values in both lists:{common}")
+else:
+        print("there are no common values in both lists")
