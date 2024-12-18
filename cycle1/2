@@ -1,0 +1,6 @@
+num1=10
+num2=10.5
+num3=10+5j
+print(f"the number {num1} has type {type(num1)}")
+print(f"the number {num2} has type {type(num2)}")
+print(f"the number {num3} has type {type(num3)}")
