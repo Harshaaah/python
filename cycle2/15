@@ -1,0 +1,9 @@
+dict1={'banana':3,'apple':5,'orange':2,'kiwi':4}
+asc=dict(sorted(dict1.items()))
+print("sorted by keys(ascending):",asc)
+desc=dict(sorted(dict1.items(),reverse=True))
+print("sorted by keys(descending):",desc)
+asc_values=dict(sorted(dict1.items(),key=lambda item:item[1]))
+print("sorted by values(ascending):",asc_values)
+desc_values=dict(sorted(dict1.items(),key=lambda item:item[1],reverse=True))
+print("sorted by values(descending):",desc_values)
