@@ -1,0 +1,11 @@
+a=int(input("enter first number"))
+b=int(input("enter the second number"))
+add=a+b
+mul=a*b
+div=a/b
+sub=a-b
+mod=a%b
+exp=a**b
+floor=a//b
+print(f"the sum={add} product={mul} division={div} substract={sub} modulus={mod}
+exponential={exp} floor division={floor}")
