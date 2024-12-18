@@ -1,0 +1,4 @@
+basic=int(input("enter your basic salary:"))
+hra=(basic/10)*100
+ta=(basic/5)*100
+print(f"your salary is {basic+hra+ta}")
