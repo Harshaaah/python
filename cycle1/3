@@ -1,0 +1,3 @@
+radi=int(input("enter the radius"))
+area=3.14*radi**2
+print(f"area of your circle is {area}.")
