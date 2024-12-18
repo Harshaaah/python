@@ -1,0 +1,4 @@
+string=input("enter a string:")
+no=int(input("enter the no.of copies:"))
+result=string*no
+print(f"the result:{result}")
