@@ -1,0 +1,4 @@
+n=int(input("enter the number"))
+print(f"{n}+{n*10+n}+{n*100+(n*10+n)}")
+result=n+((n*10)+n)+((n*100)+(n*10)+n)
+print(f"the result is {result}")
