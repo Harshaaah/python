@@ -1,0 +1,19 @@
+import math
+a=int(input("enter the coefficient of a"))
+b=int(input("enter the coefficient of b"))
+c=int(input("enter the coefficient of c"))
+d=b**2-4*a*c
+if(d==0):
+	print(" the roots are real and equal")
+	root1=-b/2*a
+	root2=-b/2*aprint(f"roots are {root1} and {root2}")
+elif(d<0):
+	real=-b/2*a
+	imaginary=math.sqrt(-d)/2*a
+	print("the roots are imaginary")
+	print(f"{real}+{imaginary}i and {real}+{imaginary}i")
+else:
+	print("the roots are different")
+	root1=-b+math.sqrt(d)/2*a
+	root2=-b-math.sqrt(d)/2*a
+	print(f"roots are {root1} and {root2}")
