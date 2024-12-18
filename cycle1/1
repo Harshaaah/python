@@ -1,0 +1,3 @@
+firstname=input("enter the first name:")
+secondname=input("enter the second name:")
+print(f"Greetings!!! {firstname} {secondname}")
